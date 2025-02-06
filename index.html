@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazing Exteriors Clone</title>
     <link rel="stylesheet" href="/src/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- main container -->
@@ -396,7 +400,7 @@
 
 
           <!-- line -->
-          <div id="expert-craftmen-below-line-container" class="swiper">
+          <div id="expert-craftmen-below-line-container">
             <h2>What  200,168+ Happy Homeowners Are Saying About Amazing Exteriors…</h2>
 
             <div class="five-star-section">
@@ -457,73 +461,83 @@
               </div>
             </div>
 
-            <div id="testimonial-container" class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./public/testimonial-1.png" alt="testimonial">
+            <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide testimonial-container">
                 <div>
-                  <img src="./public/Picture → stars.webp.png" alt="5 stars">
-                  <p>“When Amazing Exteriors finished the house, every neighbor that was walking their dog or drove by commented on how great the house looked. That made us feel great.”
-                  </p>
+                  <img src="./public/testimonial-1.png" alt="testimonial">
+                  <div>
+                    <img src="./public/Picture → stars.webp.png" alt="5 stars">
+                    <p>“When Amazing Exteriors finished the house, every neighbor that was walking their dog or drove by commented on how great the house looked. That made us feel great.”
+                    </p>
+  
+                    <div class="testimonial-name-container">
+                      <span class="name">Jim Zouglas</span>
+                      <span class="verified-review">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.35911 16.2491C7.44752 16.2953 7.54639 16.3188 7.64525 16.318C7.74411 16.3172 7.84216 16.2929 7.93138 16.2459L10.7799 14.7232C11.5876 14.2926 12.2202 13.8112 12.7137 13.2506C13.7867 12.0293 14.3726 10.4706 14.3622 8.86333L14.3284 3.56162C14.3252 2.95097 13.9241 2.40608 13.331 2.20801L8.03185 0.430075C7.71276 0.322037 7.36313 0.324385 7.04967 0.435555L1.77063 2.2769C1.18068 2.4828 0.786844 3.03161 0.790059 3.64304L0.823816 8.94083C0.834265 10.5504 1.44029 12.1021 2.53098 13.3109C3.02931 13.8636 3.66749 14.338 4.4841 14.7616L7.35911 16.2491ZM6.60396 10.0188C6.72292 10.1331 6.87724 10.1895 7.03156 10.1879C7.18588 10.1871 7.33939 10.1292 7.45674 10.0133L10.5697 6.94442C10.8036 6.71347 10.8011 6.34238 10.5648 6.11456C10.3277 5.88674 9.94595 5.88831 9.71206 6.11926L7.02271 8.77011L5.92158 7.71165C5.68447 7.48383 5.30349 7.48618 5.0688 7.71713C4.83491 7.94808 4.83732 8.31917 5.07442 8.54699L6.60396 10.0188Z" fill="#2CC0B3"/>
+                        </svg>
+  
+                      <span>Verified Review</span>
+                    </span>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
 
-                  <div class="testimonial-name-container">
-                    <span class="name">Jim Zouglas</span>
-                    <span class="verified-review">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.35911 16.2491C7.44752 16.2953 7.54639 16.3188 7.64525 16.318C7.74411 16.3172 7.84216 16.2929 7.93138 16.2459L10.7799 14.7232C11.5876 14.2926 12.2202 13.8112 12.7137 13.2506C13.7867 12.0293 14.3726 10.4706 14.3622 8.86333L14.3284 3.56162C14.3252 2.95097 13.9241 2.40608 13.331 2.20801L8.03185 0.430075C7.71276 0.322037 7.36313 0.324385 7.04967 0.435555L1.77063 2.2769C1.18068 2.4828 0.786844 3.03161 0.790059 3.64304L0.823816 8.94083C0.834265 10.5504 1.44029 12.1021 2.53098 13.3109C3.02931 13.8636 3.66749 14.338 4.4841 14.7616L7.35911 16.2491ZM6.60396 10.0188C6.72292 10.1331 6.87724 10.1895 7.03156 10.1879C7.18588 10.1871 7.33939 10.1292 7.45674 10.0133L10.5697 6.94442C10.8036 6.71347 10.8011 6.34238 10.5648 6.11456C10.3277 5.88674 9.94595 5.88831 9.71206 6.11926L7.02271 8.77011L5.92158 7.71165C5.68447 7.48383 5.30349 7.48618 5.0688 7.71713C4.83491 7.94808 4.83732 8.31917 5.07442 8.54699L6.60396 10.0188Z" fill="#2CC0B3"/>
-                      </svg>
 
-                    <span>Verified Review</span>
-                  </span>
+              <div class="swiper-slide testimonial-container">
+                <div>
+                  <img src="./public/testimonial-2.png" alt="testimonial">
+                  <div>
+                    <img src="./public/Picture → stars.webp.png" alt="5 stars">
+                    <p>“The experience exceeded my expectations. If you want quality siding and installation, you can’t go wrong with Amazing Exteriors. They have a terrific warranty on top of it.”</p>
+  
+                    <div class="testimonial-name-container">
+                      <span class="name">Scheve Family</span>
+                      <span class="verified-review">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.35911 16.2491C7.44752 16.2953 7.54639 16.3188 7.64525 16.318C7.74411 16.3172 7.84216 16.2929 7.93138 16.2459L10.7799 14.7232C11.5876 14.2926 12.2202 13.8112 12.7137 13.2506C13.7867 12.0293 14.3726 10.4706 14.3622 8.86333L14.3284 3.56162C14.3252 2.95097 13.9241 2.40608 13.331 2.20801L8.03185 0.430075C7.71276 0.322037 7.36313 0.324385 7.04967 0.435555L1.77063 2.2769C1.18068 2.4828 0.786844 3.03161 0.790059 3.64304L0.823816 8.94083C0.834265 10.5504 1.44029 12.1021 2.53098 13.3109C3.02931 13.8636 3.66749 14.338 4.4841 14.7616L7.35911 16.2491ZM6.60396 10.0188C6.72292 10.1331 6.87724 10.1895 7.03156 10.1879C7.18588 10.1871 7.33939 10.1292 7.45674 10.0133L10.5697 6.94442C10.8036 6.71347 10.8011 6.34238 10.5648 6.11456C10.3277 5.88674 9.94595 5.88831 9.71206 6.11926L7.02271 8.77011L5.92158 7.71165C5.68447 7.48383 5.30349 7.48618 5.0688 7.71713C4.83491 7.94808 4.83732 8.31917 5.07442 8.54699L6.60396 10.0188Z" fill="#2CC0B3"/>
+                        </svg>
+  
+                      <span>Verified Review</span>
+                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="swiper-slide">
-                <img src="./public/testimonial-2.png" alt="testimonial">
+              <div class="swiper-slide testimonial-container">
                 <div>
-                  <img src="./public/Picture → stars.webp.png" alt="5 stars">
-                  <p>“The experience exceeded my expectations. If you want quality siding and installation, you can’t go wrong with Amazing Exteriors. They have a terrific warranty on top of it.”</p>
-
-                  <div class="testimonial-name-container">
-                    <span class="name">Scheve Family</span>
-                    <span class="verified-review">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.35911 16.2491C7.44752 16.2953 7.54639 16.3188 7.64525 16.318C7.74411 16.3172 7.84216 16.2929 7.93138 16.2459L10.7799 14.7232C11.5876 14.2926 12.2202 13.8112 12.7137 13.2506C13.7867 12.0293 14.3726 10.4706 14.3622 8.86333L14.3284 3.56162C14.3252 2.95097 13.9241 2.40608 13.331 2.20801L8.03185 0.430075C7.71276 0.322037 7.36313 0.324385 7.04967 0.435555L1.77063 2.2769C1.18068 2.4828 0.786844 3.03161 0.790059 3.64304L0.823816 8.94083C0.834265 10.5504 1.44029 12.1021 2.53098 13.3109C3.02931 13.8636 3.66749 14.338 4.4841 14.7616L7.35911 16.2491ZM6.60396 10.0188C6.72292 10.1331 6.87724 10.1895 7.03156 10.1879C7.18588 10.1871 7.33939 10.1292 7.45674 10.0133L10.5697 6.94442C10.8036 6.71347 10.8011 6.34238 10.5648 6.11456C10.3277 5.88674 9.94595 5.88831 9.71206 6.11926L7.02271 8.77011L5.92158 7.71165C5.68447 7.48383 5.30349 7.48618 5.0688 7.71713C4.83491 7.94808 4.83732 8.31917 5.07442 8.54699L6.60396 10.0188Z" fill="#2CC0B3"/>
-                      </svg>
-
-                    <span>Verified Review</span>
-                  </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <img src="./public/testimonial-3.png" alt="testimonial">
-                <div>
-                  <img src="./public/Picture → stars.webp.png" alt="5 stars">
-                  <p>The workmanship and the details, it’s just perfect. I did a lot of research, I went with Amazing Exteriors, and I’m so glad that I did. I would recommend them to anyone.</p>
-
-                  <div class="testimonial-name-container">
-                    <span class="name">Sue Smith</span>
-                    <span class="verified-review">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.35911 16.2491C7.44752 16.2953 7.54639 16.3188 7.64525 16.318C7.74411 16.3172 7.84216 16.2929 7.93138 16.2459L10.7799 14.7232C11.5876 14.2926 12.2202 13.8112 12.7137 13.2506C13.7867 12.0293 14.3726 10.4706 14.3622 8.86333L14.3284 3.56162C14.3252 2.95097 13.9241 2.40608 13.331 2.20801L8.03185 0.430075C7.71276 0.322037 7.36313 0.324385 7.04967 0.435555L1.77063 2.2769C1.18068 2.4828 0.786844 3.03161 0.790059 3.64304L0.823816 8.94083C0.834265 10.5504 1.44029 12.1021 2.53098 13.3109C3.02931 13.8636 3.66749 14.338 4.4841 14.7616L7.35911 16.2491ZM6.60396 10.0188C6.72292 10.1331 6.87724 10.1895 7.03156 10.1879C7.18588 10.1871 7.33939 10.1292 7.45674 10.0133L10.5697 6.94442C10.8036 6.71347 10.8011 6.34238 10.5648 6.11456C10.3277 5.88674 9.94595 5.88831 9.71206 6.11926L7.02271 8.77011L5.92158 7.71165C5.68447 7.48383 5.30349 7.48618 5.0688 7.71713C4.83491 7.94808 4.83732 8.31917 5.07442 8.54699L6.60396 10.0188Z" fill="#2CC0B3"/>
-                      </svg>
-
-                    <span>Verified Review</span>
-                  </span>
+                  <img src="./public/testimonial-3.png" alt="testimonial">
+                  <div>
+                    <img src="./public/Picture → stars.webp.png" alt="5 stars">
+                    <p>The workmanship and the details, it’s just perfect. I did a lot of research, I went with Amazing Exteriors, and I’m so glad that I did. I would recommend them to anyone.</p>
+  
+                    <div class="testimonial-name-container">
+                      <span class="name">Sue Smith</span>
+                      <span class="verified-review">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.35911 16.2491C7.44752 16.2953 7.54639 16.3188 7.64525 16.318C7.74411 16.3172 7.84216 16.2929 7.93138 16.2459L10.7799 14.7232C11.5876 14.2926 12.2202 13.8112 12.7137 13.2506C13.7867 12.0293 14.3726 10.4706 14.3622 8.86333L14.3284 3.56162C14.3252 2.95097 13.9241 2.40608 13.331 2.20801L8.03185 0.430075C7.71276 0.322037 7.36313 0.324385 7.04967 0.435555L1.77063 2.2769C1.18068 2.4828 0.786844 3.03161 0.790059 3.64304L0.823816 8.94083C0.834265 10.5504 1.44029 12.1021 2.53098 13.3109C3.02931 13.8636 3.66749 14.338 4.4841 14.7616L7.35911 16.2491ZM6.60396 10.0188C6.72292 10.1331 6.87724 10.1895 7.03156 10.1879C7.18588 10.1871 7.33939 10.1292 7.45674 10.0133L10.5697 6.94442C10.8036 6.71347 10.8011 6.34238 10.5648 6.11456C10.3277 5.88674 9.94595 5.88831 9.71206 6.11926L7.02271 8.77011L5.92158 7.71165C5.68447 7.48383 5.30349 7.48618 5.0688 7.71713C4.83491 7.94808 4.83732 8.31917 5.07442 8.54699L6.60396 10.0188Z" fill="#2CC0B3"/>
+                        </svg>
+  
+                      <span>Verified Review</span>
+                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div id="testimonial-buttons" class="swiper-pagination">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="13" viewBox="0 0 48 13" fill="none">
-                <circle cx="7.03595" cy="6.50177" r="6.42657" fill="#0081C6"/>
-                <circle cx="24.0047" cy="6.50177" r="6.42657" fill="#D9D9D9"/>
-                <circle cx="40.9656" cy="6.50177" r="6.42657" fill="#D9D9D9"/>
-              </svg>
+              <div class="swiper-pagination"></div>
             </div>
+            <!-- If we need pagination -->
+          </div>
+            
           </div>
         </section>
         <!-- expert craftmen - finish -->
@@ -691,15 +705,7 @@
                       <p>STEP 1</p>
                     </div>
                     <div class="svg">
-                      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 277" fill="none">
-                        <path d="M1 1.92969L1.00001 275.93" stroke="url(#paint0_linear_2437_8002)" stroke-width="2" stroke-linecap="round"/>
-                        <defs>
-                          <linearGradient id="paint0_linear_2437_8002" x1="1.5" y1="1.92969" x2="1.50001" y2="275.93" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#0081C6"/>
-                            <stop offset="1" stop-color="white"/>
-                          </linearGradient>
-                        </defs>
-                      </svg> -->
+                      <div class="svg-underline"></div>
                     </div>
                   </div>
   
@@ -713,14 +719,15 @@
                     <img src="./public/efficient-windows-left-1.png" alt="">
                   </div>
 
-                  <div class="middle-column column-2">
+                  <div id="step-2-title" class="middle-column column-2">
                     <div class="middle-column">
                       <p>STEP 2</p>
                     </div>
                     <div class="svg">
-                      <!-- <img src="./public/steps-line.png" alt=""> -->
+                      <div class="svg-underline"></div>
                     </div>
                   </div>
+                  
 
                   <div id="step-2" class="sides column-3">
                     <div>
@@ -752,12 +759,12 @@
                   </div>
 
 
-                  <div class="middle-column column-2">
+                  <div id="step-3-title" class="middle-column column-2">
                     <div class="middle-column">
                       <p>STEP 3</p>
                     </div>
                     <div class="svg">
-                      <!-- <img src="./public/steps-line.png" alt=""> -->
+                      <div class="svg-underline"></div>
                     </div>
                   </div>
 
@@ -772,12 +779,12 @@
                     <img src="./public/efficient-windows-left-2.png" alt="">
                   </div>
 
-                  <div class="middle-column column-2">
+                  <div id="step-4-title" class="middle-column column-2">
                     <div class="middle-column">
                       <p>STEP 4</p>
                     </div>
                     <div class="svg">
-                      <!-- <img src="./public/steps-line.png" alt=""> -->
+                      <div class="svg-underline"></div>
                     </div>
                   </div>
 
@@ -807,13 +814,12 @@
                     </div>
                   </div>
 
-                  <div class="middle-column column-2">
+                  <div id="step-5-title" class="middle-column column-2">
                     <div class="middle-column">
                       <p>STEP 5</p>
                     </div>
                     <div class="svg">
-                      <div class="svg-line"></div>
-                      <!-- <img src="./public/steps-line.png" alt=""> -->
+                      <div class="svg-underline"></div>
                     </div>
                   </div>
 
@@ -923,13 +929,13 @@
             </div>
 
 
-            <div id="stunning-homes-guarenteed-houses-container">
-              <div id="stunning-homes-guarenteed-houses">
+            <!-- <div id="stunning-homes-guarenteed-houses-container"> -->
+              <!-- <div class="stunning-homes-guarenteed-houses">
                 <div class="house-image">
                   <img src="./public/stunning-windows-testimonial-image-1.jpeg" alt="picture of house">
                 </div>
   
-                <div id="stunning-homes-guarenteed-houses-copy">
+                <div class="stunning-homes-guarenteed-houses-copy">
                   <div class="stars">
                     <img src="./public/Picture → stars.webp.png" alt="">
     
@@ -950,14 +956,14 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div id="stunning-homes-guarenteed-houses">
+              <!-- <div class="stunning-homes-guarenteed-houses">
                 <div class="house-image">
                   <img src="./public/stunning-windows-testimonial-image-2.png" alt="picture of house">
                 </div>
   
-                <div id="stunning-homes-guarenteed-houses-copy">
+                <div class="stunning-homes-guarenteed-houses-copy">
                   <div class="stars">
                     <img src="./public/Picture → stars.webp.png" alt="">
     
@@ -978,14 +984,14 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div id="stunning-homes-guarenteed-houses">
+              <!-- <div class="stunning-homes-guarenteed-houses">
                 <div class="house-image">
                   <img src="./public/stunning-windows-testimonial-image-3.png" alt="picture of house">
                 </div>
   
-                <div id="stunning-homes-guarenteed-houses-copy">
+                <div class="stunning-homes-guarenteed-houses-copy">
                   <div class="stars">
                     <img src="./public/Picture → stars.webp.png" alt="">
     
@@ -1006,14 +1012,14 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div id="stunning-homes-guarenteed-houses">
+              <!-- <div class="stunning-homes-guarenteed-houses">
                 <div class="house-image">
                   <img src="./public/stunning-windows-testimonial-image-4.jpeg" alt="picture of house">
                 </div>
   
-                <div id="stunning-homes-guarenteed-houses-copy">
+                <div class="stunning-homes-guarenteed-houses-copy">
                   <div class="stars">
                     <img src="./public/Picture → stars.webp.png" alt="">
     
@@ -1034,11 +1040,173 @@
                     </div>
                   </div>
                 </div>
+              </div> -->
+            <!-- </div> -->
+
+            <!-- Slider main container - start -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                  <div class="stunning-homes-guarenteed-houses swiper-slide">
+                    <div class="house-image">
+                      <img src="./public/stunning-windows-testimonial-image-1.jpeg" alt="picture of house">
+                    </div>
+      
+                    <div class="stunning-homes-guarenteed-houses-copy">
+                      <div class="stars">
+                        <img src="./public/Picture → stars.webp.png" alt="">
+        
+                        <p>“When Amazing Exteriors finished the house, every neighbor that was walking their dog or drove by commented on how great the house looked. That made us feel great.”</p>
+                      </div>
+        
+                      <div class="testimonial-image-circle">
+                        <img src="./public/testimonial-1.png" alt="">
+        
+                        <div class="testimonial-image-text">
+                          <p>Scheve Family</p>
+                          <div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56907 15.9942C6.65749 16.0404 6.75635 16.0639 6.85521 16.0631C6.95407 16.0623 7.05213 16.038 7.14134 15.9911L9.98983 14.4683C10.7976 14.0378 11.4302 13.5563 11.9237 12.9957C12.9967 11.7744 13.5826 10.2157 13.5722 8.60844L13.5384 3.30674C13.5352 2.69609 13.1341 2.1512 12.5409 1.95313L7.24181 0.175192C6.92272 0.067154 6.57309 0.0695027 6.25963 0.180672L0.980595 2.02202C0.390642 2.22792 -0.00319546 2.77672 1.95377e-05 3.38816L0.0337771 8.68595C0.0442258 10.2956 0.650254 11.8472 1.74094 13.056C2.23927 13.6087 2.87745 14.0832 3.69406 14.5067L6.56907 15.9942ZM5.81392 9.76394C5.93288 9.87824 6.0872 9.9346 6.24152 9.93304C6.39584 9.93226 6.54935 9.87432 6.6667 9.75846L9.77963 6.68954C10.0135 6.45859 10.0111 6.0875 9.7748 5.85968C9.5377 5.63186 9.15592 5.63343 8.92202 5.86438L6.23268 8.51523L5.13154 7.45677C4.89443 7.22895 4.51345 7.2313 4.27876 7.46225C4.04487 7.6932 4.04728 8.06429 4.28438 8.29211L5.81392 9.76394Z" fill="#2CC0B3"/>
+                            </svg></span>
+                            <span>Verified Review</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <div class="stunning-homes-guarenteed-houses swiper-slide">
+                  <div class="stunning-homes-guarenteed-houses">
+                    <div class="house-image">
+                      <img src="./public/stunning-windows-testimonial-image-2.png" alt="picture of house">
+                    </div>
+      
+                    <div class="stunning-homes-guarenteed-houses-copy">
+                      <div class="stars">
+                        <img src="./public/Picture → stars.webp.png" alt="">
+        
+                        <p>“The experience exceeded my expectations. If you want quality siding and installation, you can’t go wrong with Amazing Exteriors. They have a terrific warranty on top of it.”</p>
+                      </div>
+        
+                      <div class="testimonial-image-circle">
+                        <img src="./public/testimonial-2.png" alt="">
+        
+                        <div class="testimonial-image-text">
+                          <p>Scheve Family</p>
+                          <div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56907 15.9942C6.65749 16.0404 6.75635 16.0639 6.85521 16.0631C6.95407 16.0623 7.05213 16.038 7.14134 15.9911L9.98983 14.4683C10.7976 14.0378 11.4302 13.5563 11.9237 12.9957C12.9967 11.7744 13.5826 10.2157 13.5722 8.60844L13.5384 3.30674C13.5352 2.69609 13.1341 2.1512 12.5409 1.95313L7.24181 0.175192C6.92272 0.067154 6.57309 0.0695027 6.25963 0.180672L0.980595 2.02202C0.390642 2.22792 -0.00319546 2.77672 1.95377e-05 3.38816L0.0337771 8.68595C0.0442258 10.2956 0.650254 11.8472 1.74094 13.056C2.23927 13.6087 2.87745 14.0832 3.69406 14.5067L6.56907 15.9942ZM5.81392 9.76394C5.93288 9.87824 6.0872 9.9346 6.24152 9.93304C6.39584 9.93226 6.54935 9.87432 6.6667 9.75846L9.77963 6.68954C10.0135 6.45859 10.0111 6.0875 9.7748 5.85968C9.5377 5.63186 9.15592 5.63343 8.92202 5.86438L6.23268 8.51523L5.13154 7.45677C4.89443 7.22895 4.51345 7.2313 4.27876 7.46225C4.04487 7.6932 4.04728 8.06429 4.28438 8.29211L5.81392 9.76394Z" fill="#2CC0B3"/>
+                            </svg></span>
+                            <span>Verified Review</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="stunning-homes-guarenteed-houses swiper-slide">
+                  <div class="stunning-homes-guarenteed-houses">
+                    <div class="house-image">
+                      <img src="./public/stunning-windows-testimonial-image-3.png" alt="picture of house">
+                    </div>
+      
+                    <div class="stunning-homes-guarenteed-houses-copy">
+                      <div class="stars">
+                        <img src="./public/Picture → stars.webp.png" alt="">
+        
+                        <p>The workmanship and the details, it’s just perfect. I did a lot of research, I went with Amazing Exteriors, and I’m so glad that I did. I would recommend them to anyone.</p>
+                      </div>
+        
+                      <div class="testimonial-image-circle">
+                        <img src="./public/testimonial-3.png" alt="">
+        
+                        <div class="testimonial-image-text">
+                          <p>Sue Smith</p>
+                          <div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56907 15.9942C6.65749 16.0404 6.75635 16.0639 6.85521 16.0631C6.95407 16.0623 7.05213 16.038 7.14134 15.9911L9.98983 14.4683C10.7976 14.0378 11.4302 13.5563 11.9237 12.9957C12.9967 11.7744 13.5826 10.2157 13.5722 8.60844L13.5384 3.30674C13.5352 2.69609 13.1341 2.1512 12.5409 1.95313L7.24181 0.175192C6.92272 0.067154 6.57309 0.0695027 6.25963 0.180672L0.980595 2.02202C0.390642 2.22792 -0.00319546 2.77672 1.95377e-05 3.38816L0.0337771 8.68595C0.0442258 10.2956 0.650254 11.8472 1.74094 13.056C2.23927 13.6087 2.87745 14.0832 3.69406 14.5067L6.56907 15.9942ZM5.81392 9.76394C5.93288 9.87824 6.0872 9.9346 6.24152 9.93304C6.39584 9.93226 6.54935 9.87432 6.6667 9.75846L9.77963 6.68954C10.0135 6.45859 10.0111 6.0875 9.7748 5.85968C9.5377 5.63186 9.15592 5.63343 8.92202 5.86438L6.23268 8.51523L5.13154 7.45677C4.89443 7.22895 4.51345 7.2313 4.27876 7.46225C4.04487 7.6932 4.04728 8.06429 4.28438 8.29211L5.81392 9.76394Z" fill="#2CC0B3"/>
+                            </svg></span>
+                            <span>Verified Review</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="stunning-homes-guarenteed-houses swiper-slide">
+                  <div class="stunning-homes-guarenteed-houses">
+                    <div class="house-image">
+                      <img src="./public/stunning-windows-testimonial-image-4.jpeg" alt="picture of house">
+                    </div>
+      
+                    <div class="stunning-homes-guarenteed-houses-copy">
+                      <div class="stars">
+                        <img src="./public/Picture → stars.webp.png" alt="">
+        
+                        <p>From the bidding process to the installation, they were very professional. We are just delighted. Amazing Exteriors is a wonderful company. They really were amazing.</p>
+                      </div>
+        
+                      <div class="testimonial-image-circle">
+                        <img src="./public/testimonial-1.png" alt="">
+        
+                        <div class="testimonial-image-text">
+                          <p>Steve Weinrich</p>
+                          <div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56907 15.9942C6.65749 16.0404 6.75635 16.0639 6.85521 16.0631C6.95407 16.0623 7.05213 16.038 7.14134 15.9911L9.98983 14.4683C10.7976 14.0378 11.4302 13.5563 11.9237 12.9957C12.9967 11.7744 13.5826 10.2157 13.5722 8.60844L13.5384 3.30674C13.5352 2.69609 13.1341 2.1512 12.5409 1.95313L7.24181 0.175192C6.92272 0.067154 6.57309 0.0695027 6.25963 0.180672L0.980595 2.02202C0.390642 2.22792 -0.00319546 2.77672 1.95377e-05 3.38816L0.0337771 8.68595C0.0442258 10.2956 0.650254 11.8472 1.74094 13.056C2.23927 13.6087 2.87745 14.0832 3.69406 14.5067L6.56907 15.9942ZM5.81392 9.76394C5.93288 9.87824 6.0872 9.9346 6.24152 9.93304C6.39584 9.93226 6.54935 9.87432 6.6667 9.75846L9.77963 6.68954C10.0135 6.45859 10.0111 6.0875 9.7748 5.85968C9.5377 5.63186 9.15592 5.63343 8.92202 5.86438L6.23268 8.51523L5.13154 7.45677C4.89443 7.22895 4.51345 7.2313 4.27876 7.46225C4.04487 7.6932 4.04728 8.06429 4.28438 8.29211L5.81392 9.76394Z" fill="#2CC0B3"/>
+                            </svg></span>
+                            <span>Verified Review</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="stunning-homes-guarenteed-houses swiper-slide">
+                  <div class="house-image">
+                    <img src="./public/stunning-windows-testimonial-image-1.jpeg" alt="picture of house">
+                  </div>
+    
+                  <div class="stunning-homes-guarenteed-houses-copy">
+                    <div class="stars">
+                      <img src="./public/Picture → stars.webp.png" alt="">
+      
+                      <p>“When Amazing Exteriors finished the house, every neighbor that was walking their dog or drove by commented on how great the house looked. That made us feel great.”</p>
+                    </div>
+      
+                    <div class="testimonial-image-circle">
+                      <img src="./public/testimonial-1.png" alt="">
+      
+                      <div class="testimonial-image-text">
+                        <p>Scheve Family</p>
+                        <div>
+                          <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56907 15.9942C6.65749 16.0404 6.75635 16.0639 6.85521 16.0631C6.95407 16.0623 7.05213 16.038 7.14134 15.9911L9.98983 14.4683C10.7976 14.0378 11.4302 13.5563 11.9237 12.9957C12.9967 11.7744 13.5826 10.2157 13.5722 8.60844L13.5384 3.30674C13.5352 2.69609 13.1341 2.1512 12.5409 1.95313L7.24181 0.175192C6.92272 0.067154 6.57309 0.0695027 6.25963 0.180672L0.980595 2.02202C0.390642 2.22792 -0.00319546 2.77672 1.95377e-05 3.38816L0.0337771 8.68595C0.0442258 10.2956 0.650254 11.8472 1.74094 13.056C2.23927 13.6087 2.87745 14.0832 3.69406 14.5067L6.56907 15.9942ZM5.81392 9.76394C5.93288 9.87824 6.0872 9.9346 6.24152 9.93304C6.39584 9.93226 6.54935 9.87432 6.6667 9.75846L9.77963 6.68954C10.0135 6.45859 10.0111 6.0875 9.7748 5.85968C9.5377 5.63186 9.15592 5.63343 8.92202 5.86438L6.23268 8.51523L5.13154 7.45677C4.89443 7.22895 4.51345 7.2313 4.27876 7.46225C4.04487 7.6932 4.04728 8.06429 4.28438 8.29211L5.81392 9.76394Z" fill="#2CC0B3"/>
+                          </svg></span>
+                          <span>Verified Review</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
             </div>
+            <!-- Slider main container - finish -->
+
 
             
-            <div id="slider-button">
+            <!-- <div id="slider-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="118" height="9" viewBox="0 0 118 9" fill="none">
                 <rect x="34" y="0.0800781" width="50" height="8" rx="4" fill="#0081C6"/>
                 <rect y="0.0800781" width="12" height="8" rx="4" fill="#0081C6" fill-opacity="0.2"/>
@@ -1046,7 +1214,7 @@
                 <rect x="89" y="0.0800781" width="12" height="8" rx="4" fill="#0081C6" fill-opacity="0.2"/>
                 <rect x="106" y="0.0800781" width="12" height="8" rx="4" fill="#0081C6" fill-opacity="0.2"/>
               </svg>
-            </div>
+            </div> -->
           </div>
         </section>
         <!-- stunning homes guarenteed - finish -->
@@ -1108,7 +1276,7 @@
 
                 <div id="in-home-consultation-button" class="button-area">
                   <button>CLAIM MY FREE MEASURE & QUOTE</button>
-                  <p>⭐⭐⭐⭐⭐ Proudly serving over  238,344+ homes</p>
+                  <p>⭐⭐⭐⭐⭐ Proudly serving over <strong>238,344+</strong> homes</p>
                 </div>
               </div>
           </div>
@@ -1172,6 +1340,7 @@
         <!-- footer - finish -->
 
       </main>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/src/app.js"></script>
   </body>
 </html>
